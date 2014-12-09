@@ -1,4 +1,4 @@
 qaman88.github.io
 =================
 
-Web
+My Static Web Page Based On CSS, HTML and Javascript
