@@ -1,0 +1,169 @@
+﻿<!--
+    * @Author: Tlamangile Expert Ngobeni
+    * @Department: TeneT Trademarks
+    * @University:University of CapeTown
+    * @Student Number: NGBTLA003
+    * @Date: 19 November 2014
+-->
+<head>
+
+    <meta charset="utf-8" />
+    <title>Computer Science</title>
+    <link rel="stylesheet" href="styles/style2.css" />
+    <link rel="stylesheet" href="external/jquery-ui.min.css">
+    <link rel="stylesheet" href="../styles/drop-content.css">
+    <script src="external/jquery.js"></script>
+    <script src="external/jquery-ui.min.js"></script>
+    <script src="../javascripts/drop-content.js"></script>
+    <script>
+        ﻿
+var show = "visible"; var height = "auto";
+
+$(document).ready(function () {
+    document.getElementById("introduction").style.visibility = show;
+    document.getElementById("introduction").style.height = height;
+})
+
+function dropItem(item) {
+    document.getElementsByClassName("drop-content-item").visibility = "hidden";
+    toggle(item);
+    document.getElementById(item).style.visibility = show;
+    document.getElementById(item).style.height = height;
+    document.getElementById(item).style.transform = "2s";
+}
+function toggle(item) {
+    if (document.getElementById(item).style.visibility == "visible") {
+        height = "1px";
+        show = "hidden";
+    }
+    else {
+        height = "auto";
+        show = "visible";
+    }
+}
+    </script>
+<body class="bodycover">
+    <!--Page Body-->
+
+    <div class="textdialog">
+        <div class="drop-content">
+            <div class="drop-content-title" onclick="dropItem('introduction'); ">Introduction</div>
+            <div id="introduction" class="drop-content-item" >
+                Wow, I can write code asleep. What? Well, it is started in 2011 since my departure at University of Cape Town. I am not just a programmer, I am the developer.
+                I have started my journey with python, it was smooth and lovely ride. After then I gained enough experience to study Java and C++.
+                My favorite programming language is C++, however I have mastered Java much batter. C++ is equipped with STL cool algorithms and compile to global .EXE file,
+                but you must handle memory on your own. Python turtle have made me love programming. I have included two tables below for more information on my experience.
+            </div>
+
+            <div class="drop-content-title" onclick="dropItem('courses')">Courses</div>
+            <div id="courses" class="drop-content-item">
+                <h4>
+                    Table 1: Enrolled Computer Science Courses At UCT
+                </h4>
+                <table id="courseTable" class="ui-draggable">
+                    <!--Heading-->
+                    <tr style=" font-weight:bold; text-align:center">
+                        <td>Course</td>
+                        <td>Description</td>
+                        <td>Programming Language</td>
+                        <td id="cellconcept">Concept</td>
+                    </tr>
+
+                    <!--CSC1010H-->
+                    <tr>
+                        <td>CSC1010H</td>
+                        <td>Computer Science I</td>
+                        <td>Python</td>
+                        <td>
+                            Python Basics, Input/Output, Conditionals, Loops, Functions, Testing, Data Structures, Recursion.
+                        </td>
+                    </tr>
+                    <!--CSC1011H-->
+                    <tr>
+                        <td>CSC1011H</td>
+                        <td>Computer Science I</td>
+                        <td>Python <br><br>Java</td>
+                        <td>
+                            Object Oriented Python, PyQt GUI, Database Programming, Web Programming, Functional Python.<br>
+                            Object Oriented design and programming in Java, ethics and professional communication.
+                        </td>
+                    </tr>
+
+                    <!--CSC2001F-->
+                    <tr>
+                        <td>CSC2001F</td>
+                        <td>Computer Science II</td>
+                        <td>Java</td>
+                        <td>
+                            Advanced data structures design and algorithms in Java, SQL database manipulation and introduction to Unix system.
+                        </td>
+                    </tr>
+                    <!--CSC2002S-->
+                    <tr>
+                        <td>CSC2002S</td>
+                        <td>Computer Science II</td>
+                        <td>Java<br><br>Assembly</td>
+                        <td>
+                            Mobile android applications development, concurrent and parallel programming. And introduction to computer architecture.
+                        </td>
+                    </tr>
+                    <!--CSC3023F-->
+                    <tr>
+                        <td>CSC3023F</td>
+                        <td>Computer Science III</td>
+                        <td>Java<br>Python<br>C++</td>
+                        <td>
+                            Operating system structure and operation, process and storage management, protection and open source operating system.
+                            Introduction to C++ OO, I/O, operator overloading, pointers, STL, template and exception.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="drop-content-title" onclick="dropItem('experience')">Experience</div>
+            <div id="experience" class="drop-content-item">
+                <h4>
+                    Table 2: Computer Science Experience Summary
+                </h4>
+
+                <table id="exptable">
+                    <tr>
+                        <td>Application Programming</td>
+                        <td>Python, Java, C++, UML</td>
+                    </tr>
+                    <tr>
+                        <td>Web Programming</td>
+                        <td>HTML5, CSS, JavaScript, PHP, ASP</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Programming</td>
+                        <td>Android, Web App, Windows Phone</td>
+                    </tr>
+                    <tr>
+                        <td>Database</td>
+                        <td>MySQL, MySQLi, SQL</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile OS Experience</td>
+                        <td>Symbian, Java, Android, Windows Phone</td>
+                    </tr>
+                    <tr>
+                        <td>Desktop OS Experience</td>
+                        <td>Windows7 & 8, Linux Mint & Ubuntu</td>
+                    </tr>
+                    <tr>
+                        <td>Other Skills</td>
+                        <td>Communication Skills, Project Management, Electrical Engineering</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="drop-content-title" onclick="dropItem('conclusion')">Conclusion</div>
+            <div id="conclusion" class="drop-content-item">
+                In 2014, I have finished computer science and left only with electrical engineering for 2015.
+                Thanks for your time, contact me with details provided under about tab for more information.
+            </div>
+
+        </div>
+    </div><br />
+</body>

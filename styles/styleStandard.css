@@ -1,0 +1,267 @@
+﻿/*
+* @Author: Tlamangile Expert Ngobeni
+* @Department: TeneT Trademarks
+* @University:Universityof CapeTown
+* @Student Number: NGBTLA003
+* @Date: 19 November 2014
+*/
+
+/* Target Element by class type*/
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.bodycover {
+    padding: 10px;
+    width: 1100px;
+    min-height:1000px;
+    margin-left: auto;
+    margin-right: auto;
+    /*background: url("http://enjoycss.com/bg-img/default/3_6.png");*/
+    background-repeat: repeat-x repeat-y;
+    background-position: 50% 50%;
+}
+
+body {
+    padding: 8px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image:url(../images/water.png)
+   
+}
+/*
+    Text Dialog
+*/
+.textdialog {
+    width: 1000px;
+    padding: 10px;
+    margin: 3px;
+    border: 1px solid blue;
+    background-color: lightblue;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    shape-rendering: crispEdges;
+}
+
+.menuitem {
+    width: 200px;
+    background-color: #d14836;
+    border-radius: 20px;
+    color: #ffffff;
+    list-style-type: none;
+    margin: 2px;
+    padding: 5px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+    .menuitem:hover {
+        background-color: #999999;
+    }
+
+a:link, a:hover, a:visited, a:active {
+    color: #ffffff;
+    text-decoration-style: none;
+    text-decoration: none;
+}
+
+/* Targer HTML5 Elements*/
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    padding: 4px;
+    display: inline;
+}
+
+
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+.wrapper {
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+
+#pageBody {
+    display: block;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+/* Target HTML user defined elements*/
+#headingBar {
+    background-image: url("../images/texture.png");
+    background-repeat: repeat-x repeat-y;
+    /*border-radius: 20px;*/
+    font-size: 16px;
+    align-items: flex-start;
+    width: 1100px;
+    shape-rendering: crispEdges;
+    height: 150px;
+}
+
+#pagetitle {
+    border-radius: 0;
+    font: normal normal bold 72px/normal "Atomic Age", Helvetica, sans-serif;
+    color: rgb(64, 126, 196);
+    box-shadow: none;
+    text-align: left;
+    margin-left: 60px;
+    align-content: flex-start;
+    text-shadow: 1px 1px 0 rgb(77,162,252), -1px -1px 0 rgb(77,162,252), 1px -1px 0 rgb(77,162,252), -1px 1px 0 rgb(77,162,252), 4px 4px 8px rgb(44,88,137), -4px 4px 8px rgb(44,88,137), 4px -4px 8px rgb(44,88,137), -4px -4px 8px rgb(44,88,137);
+}
+
+    #pagetitle:hover {
+        text-shadow: 1px 1px 0 rgb(77,162,252), -1px -1px 0 rgb(77,162,252), 1px -1px 0 rgb(77,162,252), -1px 1px 0 rgb(77,162,252);
+    }
+
+#footBar {
+    background-image: url("../images/texture.png");
+    background-repeat: repeat-x;
+    padding: 2px;
+    /*border-radius: 20px;*/
+    font-size: 16px;
+    width: 1100px;
+    height: 150px;
+}
+
+    #footBar > p {
+        margin-left: 60px;
+        margin-right: 60px;
+        text-align: center;
+    }
+
+#draggable {
+    width: 150px;
+    height: 150px;
+    padding: 0.5em;
+}
+
+.image {
+    height: 250px;
+    width: 200px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.imagefloat {
+    height: 250px;
+    width: 200px;
+    margin: 5px;
+    border-radius: 20px;
+    float: left;
+}
+
+.imagewide {
+    height: 220px;
+    width: 220px;
+    margin: 5px;
+    border-radius: 20px;
+    float: left;
+}
+
+.gallery {
+    overflow: no-content;
+    content: circle;
+    height: 260px;
+    width: 900px;
+}
+
+
+
+
+/*
+    Course List Table
+*/
+table {
+    border-collapse: collapse;
+    color: red;
+    width: 780px;
+}
+
+#cellconcept { /*Locate enough are for concept*/
+    width: 380px;
+}
+
+td {
+    border: 1px solid blue;
+}
+
+/*
+	Comment Text Input
+*/
+.comment {
+    height: 100px;
+    width: 300px;
+    word-wrap: normal;
+}
+
+.line {
+    width: 300px;
+}
+
+#feedback {
+    display: none;
+    background-color: darkturquoise;
+}
+
+.sticker {
+    -webkit-border-radius: 20px 10px 200px / 0 200px 14px 250px;
+    font: normal 30px/1.3 "Gochi Hand", Helvetica, sans-serif;
+    color: rgba(255,0,106,0.58);
+    background-color: #253656;
+    width: 180px;
+    height: 100px;
+    padding: 12px;
+    margin: 2px;
+    text-align: center;
+    float: left;
+}
+
+    .sticker:hover {
+        -webkit-border-radius: 20px 10px 200px / 0 200px 14px 250px;
+        font: normal 30px/1.3 "Atomuc Age", Helvetica, sans-serif;
+        color: red;
+        background-color: #872f12;
+    }
+
+.stickerContainer {
+    position: relative;
+    width: 1100px;
+    height: 500px;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dialog {
+    width: 200px;
+}

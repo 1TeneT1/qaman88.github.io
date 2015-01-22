@@ -1,0 +1,31 @@
+﻿.drop-content {
+    width: inherit;
+    height: auto;
+}
+
+.drop-content-title {
+    width: inherit;
+    background-color: #9fdda4;
+    height: 40px;
+    padding: 10px;
+    font-size: 30px;
+    border-radius:5px;
+}
+.drop-content-title:hover {
+    color:#ff0000;
+    background-color: #66d46f;
+    
+}
+
+
+.drop-content-item {
+    visibility: hidden;
+    height: 1px;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+.drop-content :matches(h1,h2,h3,h4,h5) {
+    color: #2c230a;
+}
+

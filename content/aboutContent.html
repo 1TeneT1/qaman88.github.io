@@ -1,0 +1,66 @@
+﻿<!--
+    * @Author: Tlamangile Expert Ngobeni
+    * @Department: TeneT Trademarks
+    * @University:University of CapeTown
+    * @Student Number: NGBTLA003
+    * @Date: 19 November 2014
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="utf-8" />
+    <title>About WebPage</title>
+    <link rel="stylesheet" href="styles/style2.css" />
+    <link rel="stylesheet" href="external/jquery-ui.min.css">
+    <script src="external/jquery.js"></script>
+    <script src="external/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#accordion").accordion();
+            $("#draggable").draggable();
+            $(function () {
+                $("#tabs").tabs();
+            });
+        });
+    </script>
+</head>
+<body class="textdialog">
+
+    <!--Page Body-->
+    <div id="abouttext" class="textdialog">
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Languages</a></li>
+                <li><a href="#tabs-2">Contacts</a></li>
+                <li><a href="#tabs-3">Feedback</a></li>
+            </ul>
+            <div id="tabs-1">
+                Tsonga<br />English<br />
+            </div>
+            <div id="tabs-2">
+                <div id="card" style="padding:5px ;width:inherit; height:auto">
+                        Name: Tlamangile Ngobeni<br />
+                        Cell: 0732732920<br />
+                        Email: ngbtla003@myuct.ac.za
+                </div>
+            </div>
+            <div id="tabs-3">
+                <div id="commentForm">
+                    <form action="" method="post">
+                        <b>Leave a message</b><br>
+                        Name: <br />
+                        <input id="commentName " class="line" type="text" name="username" value=""><br>
+                        Comment:<br>
+                        <textarea id="commentMessage" class="comment" name="comment" value=""></textarea><br>
+                        Email:<br>
+                        <input id="commentEmail" class="line" type="email" name="email" value=""><br /><br />
+                        <input type="submit" onclick="alert('TOBE IMPLEMENTED!')" value="Submit">
+                        <input type="reset" value="Reset"><br />
+                    </form>
+                </div>
+            </div>
+        </div><br />
+        <h4>+Note:The Web Page Is Still Under Construction!</h4>
+    </div><br />
+</body>
+</html>
